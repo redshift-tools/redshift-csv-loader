@@ -67,42 +67,21 @@ set AWS_SECRET_ACCESS_KEY=<you secret key>
 ##Example file load (into table `test2`)
 
 
-* S3_RR_Public_upload.bat
+* examples\Load_CSV_To_Redshift_Table.bat
 ```
 set AWS_ACCESS_KEY_ID=<you access key>
 set AWS_SECRET_ACCESS_KEY=<you secret key>
+set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
   
-cd c:\tmp\S3_Uploader
-s3_percent_upload.exe c:\tmp\data.zip test123 --use_rr -public
+cd c:\tmp\CSV_Loader
+csv_loader_for_redshift.exe c:\tmp\data.csv test123 -r -p -d "," -t test2 -z
 
 ```
-* resutl.log (S3_RR_Public_upload.bat > resutl.log)
+* resutl.log (Load_CSV_To_Redshift_Table.bat > resutl.log)
 ```
-Connecting to S3...
-File size: 388.5KiB
-Public = True
-ReducedRedundancy = True
-Uploaded 0 bytes of 397799 (0%)
-Uploaded 24576 bytes of 397799 (6%)
-Uploaded 49152 bytes of 397799 (12%)
-Uploaded 73728 bytes of 397799 (18%)
-Uploaded 98304 bytes of 397799 (24%)
-Uploaded 122880 bytes of 397799 (30%)
-Uploaded 147456 bytes of 397799 (37%)
-Uploaded 172032 bytes of 397799 (43%)
-Uploaded 196608 bytes of 397799 (49%)
-Uploaded 221184 bytes of 397799 (55%)
-Uploaded 245760 bytes of 397799 (61%)
-Uploaded 270336 bytes of 397799 (67%)
-Uploaded 294912 bytes of 397799 (74%)
-Uploaded 319488 bytes of 397799 (80%)
-Uploaded 344064 bytes of 397799 (86%)
-Uploaded 368640 bytes of 397799 (92%)
-Uploaded 393216 bytes of 397799 (98%)
-Upload complete.
-Your file is at: https://s3-website-us-west-2.amazonaws.com/test123/data.zip
-
-Time elapsed: 2.54299998283 seconds
+S3        | data.csv.gz | 100%
+Redshift  | test2       | DONE
+Time elapsed: 5.7 seconds
 
 ```
 
