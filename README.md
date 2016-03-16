@@ -21,7 +21,7 @@ Windows|64bit|[0.1.0 beta]
 
 ##Audience
 
-Business Analysts, AWS Developers, DevOps, 
+Database/ETL developers, Data Integrators, Data Engineers, Business Analysts, AWS Developers, DevOps, 
 
 ##Designated Environment
 Pre-Prod (UAT/QA/DEV)
