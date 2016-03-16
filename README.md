@@ -1,5 +1,5 @@
 # CSV File Loader for Amazon Redshift database.
-Simple `local file to Amazon-Redshift table` uploader to use from Windows CLI.
+Simple `local CSV file to Amazon-Redshift table` loader to use from Windows CLI.
 
 Logs upload % progress to CLI screen.
 
@@ -89,4 +89,4 @@ Time elapsed: 5.7 seconds
 
 
 ##Download
-* [Master Release](https://github.com/alexbuz/S3_File_Uploader/archive/master.zip) -- `s3_percent_uploader 0.1.0`
+* [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `s3_percent_uploader 0.1.0`
