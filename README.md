@@ -36,6 +36,7 @@ Pre-Prod (UAT/QA/DEV)
 Usage:  
   set AWS_ACCESS_KEY_ID=<you access key>
   set AWS_SECRET_ACCESS_KEY=<you secret key>
+  set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
   csv_loader_for_redshift.py <file_to_transfer> <bucket_name> [<use_rr>] [<public>]
 						 [<delim>] [<quote>] [<to_table>] [<gzip_source_file>]
 	
