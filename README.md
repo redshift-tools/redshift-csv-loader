@@ -21,6 +21,8 @@ Windows|64bit|[0.1.0 beta]
 - Optional "make it public" after upload (private by default)
 - S3 Key defaulted to transfer file name.
 - Load is done using COPY command
+- Target Redshift table has to exists
+
 
 ##Audience
 
