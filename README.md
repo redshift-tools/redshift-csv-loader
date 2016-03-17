@@ -25,7 +25,7 @@ Windows|64bit|[0.1.0 beta]
 - It's a python/boto/psycopg2 script
 	* Boto S3 docs: http://boto.cloudhackers.com/en/latest/ref/s3.html
 	* psycopg2 docs: http://initd.org/psycopg/docs/
-- Executable is created using pyInstaller
+- Executable is created using [pyInstaller] (http://www.pyinstaller.org/)
 
 ##Audience
 
