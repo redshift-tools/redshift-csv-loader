@@ -1,5 +1,5 @@
 # CSV File Loader for Amazon Redshift DB.
-Simple _*local CSV file* to Amazon-Redshift table_ loader to use from Windows CLI.
+Simple `*local CSV file* to Amazon-Redshift table` loader to use from Windows CLI.
 
 Logs upload % progress to CLI screen.
 
