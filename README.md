@@ -3,7 +3,7 @@ Simple `local CSV file to Amazon-Redshift table` loader to use from Windows CLI.
 
 Logs upload % progress to CLI screen.
 
-Written using Python/boto/PyInstaller
+Written using Python/boto/psycopg2/PyInstaller
 
 ##Version
 
