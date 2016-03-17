@@ -103,5 +103,5 @@ integer, data3 varchar,num4 integer, data4 varchar);
 * Test data is in file examples\data.csv
 
 ##Download
-* git clone https://github.com/alexbuz/CSV_Loader_For_Redshift
+* `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
