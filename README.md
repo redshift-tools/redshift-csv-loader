@@ -94,7 +94,7 @@ Time elapsed: 5.7 seconds
 ###Target Redshift table DDL
 
 ```
-CREATE TEMPORARY TABLE test2 (id integer , num integer, data varchar,num2 integer, data2 varchar,num3 
+CREATE TABLE test2 (id integer , num integer, data varchar,num2 integer, data2 varchar,num3 
 integer, data3 varchar,num4 integer, data4 varchar);
 
 ```
