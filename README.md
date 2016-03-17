@@ -91,8 +91,16 @@ Time elapsed: 5.7 seconds
 
 ```
 
+###Target Redshift table DDL
 
+```
+CREATE TEMPORARY TABLE test2 (id integer , num integer, data varchar,num2 integer, data2 varchar,num3 
+integer, data3 varchar,num4 integer, data4 varchar);
 
+```
+
+###Test data
+* Test data is in file examples\data.csv
 
 ##Download
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
