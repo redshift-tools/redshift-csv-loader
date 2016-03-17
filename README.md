@@ -14,10 +14,13 @@ Windows|64bit|[0.1.0 beta]
 ##Purpose
 
 - Ad-hoc CSV file load to Amazon Redshift table.
+
+## How it works
 - File is staged on S3 prior to load to Redshift
 - Optional upload to Reduced Redundancy storage (not RR by default).
 - Optional "make it public" after upload (private by default)
 - S3 Key defaulted to transfer file name.
+- Load is done using COPY command
 
 ##Audience
 
