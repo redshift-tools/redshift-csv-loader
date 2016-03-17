@@ -105,7 +105,7 @@ integer, data3 varchar,num4 integer, data4 varchar);
 * Test data is in file examples\data.csv
 
 ##Sources
-* Cleaning up source code (removing passwords and AWS keys :-)).
+* Will and them as soon as I clean and remove all the passwords and AWS keys :-)).
 
 ##Download
 * `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
