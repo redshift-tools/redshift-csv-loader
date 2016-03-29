@@ -96,8 +96,9 @@ Redshift  | test2       | DONE
 Time elapsed: 5.7 seconds
 
 ```
+##Test prerequisits.
 
-###Target Redshift table DDL
+####Target Redshift table DDL
 
 ```
 CREATE TABLE test2 (id integer , num integer, data varchar,num2 integer, data2 varchar,num3 
@@ -105,12 +106,12 @@ integer, data3 varchar,num4 integer, data4 varchar);
 
 ```
 
-###Test data
+####Test data
 * Test data is in file examples\data.csv
 
-##Sources
+###Sources
 * Will add as soon as I clean em up and remove all the passwords and AWS keys :-)).
 
-##Download
+###Download
 * `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
