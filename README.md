@@ -62,8 +62,10 @@ Usage:
 """
 
 ```
+#Example
 
-##Environment variables
+
+###Environment variables
 
 * Set the following environment variables:
 
@@ -74,7 +76,7 @@ set AWS_SECRET_ACCESS_KEY=<you secret key>
 set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
 ```
 
-##Example file load into Redshift table `test2`
+ ## CSV file upload into Redshift table `test2`
 
 
 * examples\Load_CSV_To_Redshift_Table.bat
