@@ -67,7 +67,7 @@ Usage:
 
 ###Environment variables
 
-* Set the following environment variables:
+* Set the following environment variables (for all tests:
 
 ```
 set AWS_ACCESS_KEY_ID=<you access key>
@@ -76,7 +76,7 @@ set AWS_SECRET_ACCESS_KEY=<you secret key>
 set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
 ```
 
- ## CSV file upload into Redshift table `test2`
+### CSV file upload into Redshift table `test2`
 
 
 * examples\Load_CSV_To_Redshift_Table.bat
