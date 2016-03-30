@@ -133,7 +133,7 @@ integer, data3 varchar,num4 integer, data4 varchar);
 Yes. This is the main purpose of the `CSV Loader for Redshift`.
 
 #### Can developers integrate CSV loader into their ETL pipelines?
-Yes. Assuming they are doing it on Windows OS.
+Yes. Assuming they are doing it on OS Windows.
 
 #### How fast is data upload using `CSV Loader for Redshift`?
 As fast as any AWS API provided by Amazon.
