@@ -136,9 +136,23 @@ Yes. This is the main purpose of the `CSV Loader for Redshift`.
 Yes. Assuming they are doing it on Windows OS.
 
 #### How fast is data upload using `CSV Loader for Redshift`?
+As fast as any AWS API provided by Amazon.
 
-#### What's the other ways to upload file to redshift?
-YOu can use 'aws s3api' and psql COPY command to do pretty much the same.
+#### What're the other ways to upload file to redshift?
+You can use 'aws s3api' and psql COPY command to do pretty much the same.
+
+
+#### Does it delete file from S3 after upload?
+No
+
+#### Does it create target Redshift table?
+No
+
+#### Is there an option to compress input CSV file before upload?
+Yes. Use `-z` or `--gzip_source_file` argument to compress input file
+
+####How to inscease upload speed?
+Compress input file. Provide `-z` or `--gzip_source_file` arg in command line.
 
 
 
