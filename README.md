@@ -3,6 +3,16 @@ CSV file to Amazon-Redshift table loader.
 - Input file has to be located on your Windows desktop (not S3).
 - Execute loader from Windows CLI (cmd/command line)
 
+Features:
+ - Loads local CSV file to Amazon Redshift.
+ - No need to preload your data to S3 prior to insert to Redshift.
+ - No need for Amazon AWS CLI.
+ - Works from your OS Windows desktop (command line).
+ - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
+ - It's 32 bit - it will work on any vanilla Windows.
+ - AWS Access Keys are not passed as arguments. 
+ - Written using Python/boto/PyInstaller.
+ - 
 
 ##Version
 
