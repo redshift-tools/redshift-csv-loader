@@ -1,7 +1,5 @@
 # CSV File Loader for Amazon Redshift DB.
-CSV file to Amazon-Redshift table loader.
-- Input file has to be located on your Windows desktop (not S3).
-- Execute loader from Windows CLI (cmd/command line)
+Loads CSV file to Amazon-Redshift table.
 
 Features:
  - Loads local CSV file to Amazon Redshift.
