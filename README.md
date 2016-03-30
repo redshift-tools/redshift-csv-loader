@@ -126,18 +126,18 @@ integer, data3 varchar,num4 integer, data4 varchar);
 
 
 
-#
+#   
 #FAQ
-#
-###Can it load CSV file from Windows desktop to Amazon Redshift.
+#  
+#### Can it load CSV file from Windows desktop to Amazon Redshift.
 Yes. This is the main purpose of the `CSV Loader for Redshift`.
 
-###Can developers integrate CSV loader into their ETL pipelines?
+#### Can developers integrate CSV loader into their ETL pipelines?
 Yes. Assuming they are doing it on Windows OS.
 
-### How fast is data upload using `CSV Loader for Redshift`?
+#### How fast is data upload using `CSV Loader for Redshift`?
 
-###What's the other ways to upload file to redshift?
+#### What's the other ways to upload file to redshift?
 YOu can use 'aws s3api' and psql COPY command to do pretty much the same.
 
 
