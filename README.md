@@ -217,16 +217,16 @@ Yes, Oracle OCA
 Yes, I'm available for full-time or part-time contract work.
 
 ####Are you eligible to work in USA for any employer?
-Yes, I have a Green Card.
+Yes, contact me for details.
 
-#### WHat's you preference, contract or full-time?
+#### What's you preference, contract or full-time?
 Ideally, looking for corp-to-corp contract.
 
 #### Are you incorporated?
 Yes, sCorp
 
 #### Where do you live?
-New Jersey
+Tri-State area
 
 #### Will you work onsite?
 No, remote work only
