@@ -202,8 +202,7 @@ I'll get back to you within hours.
 #Oracle FAQ.
 
 ####What's your experience with Oracle Database?
-20+ Years of Oracle PL/SQL Developent.
-including 15+ years of US experience.
+20+ Years of Oracle PL/SQL Developent (including 15+ years of US experience).
 
 ####What data integration tools for Oracle have you created?
  - [Databuddy](https://github.com/data-buddy/Databuddy/blob/master/README.md) - data integration framework for SQL and  noSQL stores.
