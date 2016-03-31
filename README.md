@@ -248,7 +248,7 @@ I can act as midlevel:
  - BI Engineer
  - DataWarehouse Developer
  - Netezza Developer
- - AWS Developer/DevOp
+ - AWS Developer/DevOps
 
 #### What other programming languages do you use?
 Python (wxPython)
