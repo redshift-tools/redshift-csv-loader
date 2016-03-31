@@ -270,8 +270,9 @@ No, I'm `Database Developer`, my Python is secondary to Oracle
  - Oracle PL/SQL development and optimization.
  - Netezza nzPL/SQL Development and SQL/Database optimization.
  - Vertica Development and SQL/Database optimization.
+ - AWS S3, Redshift, VPC, CloudWatch
  - Python, wxPython, boto, psycopg2
- - Linux shell 
+ - Linux Shell scripting
 
 #### What clients have you worked for in the past?
 Contact me.
