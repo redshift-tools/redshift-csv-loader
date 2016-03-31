@@ -126,11 +126,16 @@ integer, data3 varchar,num4 integer, data4 varchar);
 
 
 
+
+#
+#
+#
+#
 #   
 #FAQ
 #  
 #### Can it load CSV file from Windows desktop to Amazon Redshift.
-Yes. This is the main purpose of the `CSV Loader for Redshift`.
+Yes, it is the main purpose of this tool.
 
 #### Can developers integrate CSV loader into their ETL pipelines?
 Yes. Assuming they are doing it on OS Windows.
