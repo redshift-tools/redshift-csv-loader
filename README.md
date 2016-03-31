@@ -194,10 +194,22 @@ Yes, please, ask me for new features.
 Yes, you can PM me here or email at `alex_buz@yahoo.com`.
 I'll get back to you within hours.
 
-##Employment FAQ
+#Oracle FAQ.
+
+####What's your experience with Oracle Database?
+20+ Years of Oracle PL/SQL Developent.
+
+####What data integration tools for Oracle have you created?
+
+####Do you have any Oracle Certifications?
+Yes, Oracle OCA
+
+
+
+#Employment FAQ
 
 ####Are you available for hire?
-Yes, I'm available to contract work.
+Yes, I'm available for full-time or part-time contract work.
 
 ####Are you eligible to work in USA for any employer?
 Yes, I have a Green Card.
@@ -205,22 +217,44 @@ Yes, I have a Green Card.
 #### Will you work fulltime?
 Yes, but, ideally, looking for corp-to-corp contract.
 
-#### Are you incorporated
+#### Are you incorporated?
 Yes, sCorp
 
-####Where do you live?
+#### Where do you live?
 New Jersey
 
-####Will you work onsite?
+#### Will you work onsite?
 No, remote work only
 
-####Are you a `Data Engineer`
-No, I'm Sr.Oracle PL/SQL Developer
+#### Will you travel for work?
+Yes, couple of days per month max.
+
+#### Are you a `Data Engineer`?
+No, I'm `Oracle PL/SQL Developer`
 Can act as midlevel:
  - BI Engineer
  - DataWarehouse Developer
  - Netezza Developer
- - AWS Developer
+ - AWS Developer/DevOp
+
+#### What other programming languages do you use?
+Python (wxPython)
+
+#### Will you work as  Java programmer in enterprise setting?
+No
+
+#### Do you know SQL server?
+No
+
+#### Do you know industry stundard ETL tools as Informatica, Talend or ISIS?
+No
+
+#### Are you Python developer?
+No, my Python is secondary to Oracle
+
+
+
+
 
 
 
