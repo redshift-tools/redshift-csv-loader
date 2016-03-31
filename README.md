@@ -185,6 +185,9 @@ Please, contact me for sources.
 #### Can you modify functionality and add features?
 Yes, please, ask me for new features.
 
+#### What other AWS tools you've created?
+- [S3_Sanity_Check] (https://github.com/alexbuz/S3_Sanity_Check/blob/master/README.md) - let's you `ping` Amazon-S3 bucket to see if it's publicly readable.
+
 #### Can you create similar/custom data tool for our business?
 Yes, you can PM me here or email at `alex_buz@yahoo.com`.
 I'll get back to you within hours.
