@@ -199,19 +199,9 @@ Yes, please, ask me for new features.
 Yes, you can PM me here or email at `alex_buz@yahoo.com`.
 I'll get back to you within hours.
 
-#Oracle FAQ.
+###Links
+ - [Employment FAQ](https://github.com/alexbuz/FAQs/blob/master/README.md)
 
-####What's your experience with Oracle Database?
-20+ Years of Oracle PL/SQL Developent (including 15+ years of US experience).
-
-####What data integration tools for Oracle have you created?
- - [Databuddy](https://github.com/data-buddy/Databuddy/blob/master/README.md) - data integration framework for SQL and  noSQL stores.
- - [Tabzilla](https://github.com/alexbuz/TabZilla/blob/master/README.md) - Python (Linux CLI) script for ad-hoc Oracle table and query data replication
- - [CSV-Loader-Pro](https://github.com/alexbuz/CSV-Loader-Pro) - CSV file loader for 14 databases including Oracle, Sybase, Mysql, DB2, Informix, PostgreSql, SQLServer, MariaDB, Timesten, SQLLite, Infobright 
- - [CSV-Extractor-PRO](https://github.com/alexbuz/CSV-Extractor-PRO) - Extracts data in CSV format from Oracle, Sybase, Mysql, DB2, Informix, PostgreSql, SQLServer, MariaDB, Timesten, SQLLite, Infobright
-
-####Do you have any Oracle Certifications?
-Yes, Oracle OCA
 
 
 
