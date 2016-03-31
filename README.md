@@ -203,6 +203,7 @@ I'll get back to you within hours.
 
 ####What's your experience with Oracle Database?
 20+ Years of Oracle PL/SQL Developent.
+including 15+ years of US experience.
 
 ####What data integration tools for Oracle have you created?
  - [Databuddy](https://github.com/data-buddy/Databuddy/blob/master/README.md) - data integration framework for SQL and  noSQL stores.
@@ -242,7 +243,8 @@ Yes, couple of days per month max.
 
 #### Are you a `Data Engineer`?
 No, I'm `Oracle PL/SQL Developer`
-Can act as midlevel:
+
+I can act as midlevel:
  - BI Engineer
  - DataWarehouse Developer
  - Netezza Developer
