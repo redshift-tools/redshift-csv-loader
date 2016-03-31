@@ -214,8 +214,8 @@ Yes, I'm available for full-time or part-time contract work.
 ####Are you eligible to work in USA for any employer?
 Yes, I have a Green Card.
 
-#### Will you work fulltime?
-Yes, but, ideally, looking for corp-to-corp contract.
+#### WHat's you preference, contract or full-time?
+Ideally, looking for corp-to-corp contract.
 
 #### Are you incorporated?
 Yes, sCorp
@@ -254,13 +254,16 @@ No, I'm `Database Developer`, my Python is secondary to Oracle
 
 #### What are your top skills?
  - SQL report writing and optimization
- - Oracle PL/SQL development and optimization
- - Netezza nzPL/SQL
- - Vertica Development
+ - Oracle PL/SQL development and optimization.
+ - Netezza nzPL/SQL Development and SQL/Database optimization.
+ - Vertica Development and SQL/Database optimization.
  - Python, wxPython, boto, psycopg2
  - Linux shell 
 
 #### What clients have you worked for in the past?
+Contact me.
+
+#### When was your last project?
 Contact me.
 
 
