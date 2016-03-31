@@ -205,6 +205,12 @@ I'll get back to you within hours.
 20+ Years of Oracle PL/SQL Developent.
 
 ####What data integration tools for Oracle have you created?
+ - [Databuddy](https://github.com/data-buddy/Databuddy/blob/master/README.md) - data integration framework for SQL and  noSQL stores.
+ - [Tabzilla](https://github.com/alexbuz/TabZilla/blob/master/README.md) - Python (Linux CLI) script for ad-hoc Oracle table and query data replication
+ - [CSV-Loader-Pro](https://github.com/alexbuz/CSV-Loader-Pro) - CSV file loader for 14 databases including Oracle, Sybase, Mysql, DB2, Informix, PostgreSql, SQLServer, MariaDB, Timesten, SQLLite, Infobright 
+ - [CSV-Extractor-PRO](https://github.com/alexbuz/CSV-Extractor-PRO) - Extracts data in CSV format from Oracle, Sybase, Mysql, DB2, Informix, PostgreSql, SQLServer, MariaDB, Timesten, SQLLite, Infobright
+
+
 
 ####Do you have any Oracle Certifications?
 Yes, Oracle OCA
@@ -213,7 +219,7 @@ Yes, Oracle OCA
 
 #Employment FAQ
 
-####Are you available for hire?
+#### Alex, are you available for hire?
 Yes, I'm available for full-time or part-time contract work.
 
 ####Are you eligible to work in USA for any employer?
