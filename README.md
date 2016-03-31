@@ -210,74 +210,9 @@ I'll get back to you within hours.
  - [CSV-Loader-Pro](https://github.com/alexbuz/CSV-Loader-Pro) - CSV file loader for 14 databases including Oracle, Sybase, Mysql, DB2, Informix, PostgreSql, SQLServer, MariaDB, Timesten, SQLLite, Infobright 
  - [CSV-Extractor-PRO](https://github.com/alexbuz/CSV-Extractor-PRO) - Extracts data in CSV format from Oracle, Sybase, Mysql, DB2, Informix, PostgreSql, SQLServer, MariaDB, Timesten, SQLLite, Infobright
 
-
-
 ####Do you have any Oracle Certifications?
 Yes, Oracle OCA
 
-
-
-#Employment FAQ
-
-#### Alex, are you available for hire?
-Yes, I'm available for full-time or part-time contract work.
-
-####Are you eligible to work in USA for any employer?
-Yes, contact me for details.
-
-#### What's you preference, contract or full-time?
-Ideally, looking for corp-to-corp contract.
-
-#### Are you incorporated?
-Yes, sCorp
-
-#### Where do you live?
-Tri-State area
-
-#### Will you work onsite?
-No, remote work only
-
-#### Will you travel for work?
-Yes, couple of days per month max.
-
-#### Are you a `Data Engineer`?
-No, I'm `Oracle PL/SQL Developer`
-
-I can act as midlevel:
- - BI Engineer
- - DataWarehouse Developer
- - Netezza Developer
- - AWS Developer/DevOps
-
-#### What other programming languages do you use?
-Python (wxPython)
-
-#### Will you work as  Java programmer in enterprise setting?
-No
-
-#### Do you know SQL server?
-No
-
-#### Do you know industry stundard ETL tools as Informatica, Talend or ISIS?
-No
-
-#### Are you Python developer?
-No, I'm `Database Developer`, my Python is secondary to Oracle
-
-#### What are your top skills?
- - SQL report writing and optimization
- - Oracle PL/SQL development and optimization.
- - Netezza nzPL/SQL Development and SQL/Database optimization.
- - Vertica Development and SQL/Database optimization.
- - AWS S3, Redshift, VPC, CloudWatch
- - Python, wxPython, boto, psycopg2
- - Linux Shell scripting
-
-#### What clients have you worked for in the past?
-Contact me.
-
-#### When was your last project?
-Contact me.
 
 
 
