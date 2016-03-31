@@ -194,6 +194,35 @@ Yes, please, ask me for new features.
 Yes, you can PM me here or email at `alex_buz@yahoo.com`.
 I'll get back to you within hours.
 
+##Employment FAQ
+
+####Are you available for hire?
+Yes, I'm available to contract work.
+
+####Are you eligible to work in USA for any employer?
+Yes, I have a Green Card.
+
+#### Will you work fulltime?
+Yes, but, ideally, looking for corp-to-corp contract.
+
+#### Are you incorporated
+Yes, sCorp
+
+####Where do you live?
+New Jersey
+
+####Will you work onsite?
+No, remote work only
+
+####Are you a `Data Engineer`
+No, I'm Sr.Oracle PL/SQL Developer
+Can act as midlevel:
+ - BI Engineer
+ - DataWarehouse Developer
+ - Netezza Developer
+ - AWS Developer
+
+
 
 
 
