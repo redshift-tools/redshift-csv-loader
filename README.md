@@ -250,8 +250,18 @@ No
 No
 
 #### Are you Python developer?
-No, my Python is secondary to Oracle
+No, I'm `Database Developer`, my Python is secondary to Oracle
 
+#### What are your top skills?
+ - SQL report writing and optimization
+ - Oracle PL/SQL development and optimization
+ - Netezza nzPL/SQL
+ - Vertica Development
+ - Python, wxPython, boto, psycopg2
+ - Linux shell 
+
+#### What clients have you worked for in the past?
+Contact me.
 
 
 
