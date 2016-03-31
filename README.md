@@ -139,15 +139,15 @@ Yes. Assuming they are doing it on OS Windows.
 As fast as any AWS API provided by Amazon.
 
 ####How to inscease upload speed?
-Compress input file. Provide `-z` or `--gzip_source_file` arg in command line.
+Compress input file or provide `-z` or `--gzip_source_file` arg in command line and this tool will compress it for you before upload to S3.
 
 #### What are the other ways to upload file to Redshift?
 You can use 'aws s3api' and psql COPY command to do pretty much the same.
 
 #### Can I just zip it using Windows File Explorer?
-No, redshift will not recognize *.zip file format.
-You have to 'gzip it. You can use 7-Zip to do that.
-You can also specify `-z` CLI argument and feed uncompressed file to  `CSV Loader for Redshift`
+No, Redshift will not recognize *.zip file format.
+You have to `gzip` it. You can use 7-Zip to do that.
+
 
 #### Does it delete file from S3 after upload?
 No
@@ -156,11 +156,8 @@ No
 No
 
 #### Is there an option to compress input CSV file before upload?
-Yes. Use `-z` or `--gzip_source_file` argument to compress input file
+Yes. Use `-z` or `--gzip_source_file` argument so the tool does compression for you.
 
-#### Explain second step of data load. How data is loaded to Amazon Redshift?
-You Redshift cluster has to be open to the world (accessible via port 5439 from internet).
-It uses PostgreSQL COPY command to load file located on S3 into Redshift table.
 
 #### Explain first step of data load?
 The CSV you provided is getting preloaded to Amazon-S3.
@@ -168,8 +165,33 @@ It doesn't have to be made public for load to Redshift.
 It can be compressed or uncompressed.
 Your input file is getting compressed (optional) and uploaded to S3 using credentials you set in shell.
 
+
+#### Explain second step of data load. How data is loaded to Amazon Redshift?
+You Redshift cluster has to be open to the world (accessible via port 5439 from internet).
+It uses PostgreSQL COPY command to load file located on S3 into Redshift table.
+
+
 #### Can I use WinZip or 7-zip
 Yes, but you have to use 'gzip' compression type.
+
+#### What technology was used to create this tool
+I used Python, Boto, and psycopg2 to write it.
+Boto is used to upload file to S3. 
+psycopg2 is used to establish ODBC connection with Redshift clusted and execute `COPY` command.
+
+#### Where are the sources?
+Please, contact me for sources.
+
+#### Can you modify functionality and add features?
+Yes, please, ask me for new features.
+
+#### Can you create similar/custom data tool for our business?
+Yes, you can PM me here or email at `alex_buz@yahoo.com`.
+I'll get back to you within hours.
+
+
+
+
 
 
 
