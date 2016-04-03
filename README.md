@@ -195,6 +195,9 @@ Yes, please, ask me for new features.
 - [EC2_Metrics_Plotter](https://github.com/alexbuz/EC2_Metrics_Plotter/blob/master/README.md) - plots any CloudWatch EC2 instance  metric stats.
 - [S3_File_Uploader](https://github.com/alexbuz/S3_File_Uploader/blob/master/README.md) - uploads file from Windows to S3.
 
+#### Do you have any AWS Certifications?
+Yes, [AWS Certified Developer (Associate)](https://raw.githubusercontent.com/alexbuz/FAQs/master/images/AWS_Ceritied_Developer_Associate.png)
+
 #### Can you create similar/custom data tool for our business?
 Yes, you can PM me here or email at `alex_buz@yahoo.com`.
 I'll get back to you within hours.
