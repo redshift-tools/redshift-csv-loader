@@ -9,7 +9,7 @@ Features:
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
  - It's 32 bit - it will work on any vanilla Windows.
  - AWS Access Keys are not passed as arguments. 
- - Written using Python/boto/PyInstaller.
+ - Written using Python/boto/psycopg2/PyInstaller.
 
 
 ##Version
