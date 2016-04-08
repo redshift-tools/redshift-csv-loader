@@ -64,7 +64,7 @@ Usage:
         --quote  -- CSV quote ('"').
         --to_table  -- Target Amazon-Redshit table name.
         --timeformat -- timestamp format (MM/DD/YYYY HH12:MI:SS)
-        --ignoreheader -- numbers of eading lines to ignore (0)
+        --ignoreheader -- numbers of leading lines to ignore (0)
         --gzip_source_file  -- gzip input CVS file before upload to Amazon-S3 (False).
 
         Input filename will be used for S3 key name.
