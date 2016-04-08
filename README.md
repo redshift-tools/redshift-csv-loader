@@ -110,7 +110,13 @@ Redshift  | test       | DONE
 Time elapsed: 55.7 seconds
 
 ```
-##Test prerequisits.
+
+#### Controlling timestamp format
+Use `-m/--timeformat "MM/DD/YYYY HH12:MI:SS"` to control timestamp format.
+
+#### Skipping the header
+Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
+
 
 ####Target Redshift table DDL
 
@@ -133,11 +139,7 @@ Latitude VARCHAR(20),Longitude VARCHAR(20),Police_District_Number VARCHAR(50),Lo
 * `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
 
-#### Controlling timestamp format
-Use `-m/--timeformat "MM/DD/YYYY HH12:MI:SS"` to control timestamp format.
 
-#### Skipping the header
-Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
 
 
 
