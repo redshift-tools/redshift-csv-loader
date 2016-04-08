@@ -91,7 +91,6 @@ set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' 
 
 ### CSV file upload into Redshift table `test`
 
-
 ```
 cd c:\Python35-32\PROJECTS\csv2redshift
 python csv_loader_for_redshift.py Crime.csv pythonuploadtest1 ^
@@ -187,11 +186,15 @@ It doesn't have to be made public for load to Redshift.
 It can be compressed or uncompressed.
 Your input file is getting compressed (optional) and uploaded to S3 using credentials you set in shell.
 
-
 #### Explain second step of data load. How data is loaded to Amazon Redshift?
 You Redshift cluster has to be open to the world (accessible via port 5439 from internet).
 It uses PostgreSQL COPY command to load file located on S3 into Redshift table.
 
+#### How do I skip the header record in input CSV file?
+Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
+
+#### How do i set custom timestamp format for Redshift load?
+Use `-m/--timeformat "MM/DD/YYYY HH12:MI:SS"` to control timestamp format.
 
 #### Can I use WinZip or 7-zip
 Yes, but you have to use 'gzip' compression type.
