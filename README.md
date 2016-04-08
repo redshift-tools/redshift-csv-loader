@@ -44,29 +44,34 @@ Pre-Prod (UAT/QA/DEV)
 ##Usage
 
 ```
-## Load CSV file to Amazon Redshift table.
-##
-## Load % progress outputs to the screen.
-##
-Usage:  
+c:\Python35-32\PROJECTS\csv2redshift>dist-32bit\csv_loader_for_redshift.exe
+#############################################################################
+#CSV-to-Redshift Data Loader (v1.2, beta, 04/05/2016 15:11:53) [64bit]
+#Copyright (c): 2016 Alex Buzunov, All rights reserved.
+#Agreement: Use this tool at your own risk. Author is not liable for any damages
+#           or losses related to the use of this software.
+################################################################################
+Usage:
   set AWS_ACCESS_KEY_ID=<you access key>
   set AWS_SECRET_ACCESS_KEY=<you secret key>
-  set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
-  csv_loader_for_redshift.py <file_to_transfer> <bucket_name> [<use_rr>] [<public>]
-						 [<delim>] [<quote>] [<to_table>] [<gzip_source_file>]
-	
-	--use_rr -- Use reduced redundancy storage (False).
-	--public -- Make uploaded files public (False).
-	--delim  -- CSV file delimiter (',').
-	--quote  -- CSV quote ('"').
-	--to_table  -- Target Amazon-Redshit table name.
-	--gzip_source_file  -- gzip input CVS file before upload to Amazon-S3 (False).
-	
-	Input filename will be used for S3 key name.
-	
-	Boto S3 docs: http://boto.cloudhackers.com/en/latest/ref/s3.html
-	psycopg2 docs: http://initd.org/psycopg/docs/
-	
+  set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"
+  csv_loader_for_redshift.exe <file_to_transfer> <bucket_name> [<use_rr>] [<public>]
+                                                 [<delim>] [<quote>] [<to_table>] [<gzip_source_file>]
+
+        --use_rr -- Use reduced redundancy storage (False).
+        --public -- Make uploaded files public (False).
+        --delim  -- CSV file delimiter (',').
+        --quote  -- CSV quote ('"').
+        --to_table  -- Target Amazon-Redshit table name.
+        --timeformat -- timestamp format (MM/DD/YYYY HH12:MI:SS)
+        --ignoreheader -- numbers of eading lines to ignore (0)
+        --gzip_source_file  -- gzip input CVS file before upload to Amazon-S3 (False).
+
+        Input filename will be used for S3 key name.
+
+        Boto S3 docs: http://boto.cloudhackers.com/en/latest/ref/s3.html
+        psycopg2 docs: http://initd.org/psycopg/docs/
+
 """
 
 ```
@@ -84,24 +89,25 @@ set AWS_SECRET_ACCESS_KEY=<you secret key>
 set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
 ```
 
-### CSV file upload into Redshift table `test2`
+### CSV file upload into Redshift table `test`
 
 
-* examples\Load_CSV_To_Redshift_Table.bat
 ```
-set AWS_ACCESS_KEY_ID=<you access key>
-set AWS_SECRET_ACCESS_KEY=<you secret key>
-set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' host='mycluster.***.redshift.amazonaws.com'"  
-  
-cd c:\tmp\CSV_Loader
-csv_loader_for_redshift.exe c:\tmp\data.csv test123 -r -d "," -t test2 -z
+cd c:\Python35-32\PROJECTS\csv2redshift
+python csv_loader_for_redshift.py Crime.csv pythonuploadtest1 ^
+	-r ^
+	-p ^
+	-d "," ^
+	-t test ^
+	-z ^
+	-i 1
 
 ```
-* resutl.log (Load_CSV_To_Redshift_Table.bat > resutl.log)
+Result
 ```
-S3        | data.csv.gz | 100%
-Redshift  | test2       | DONE
-Time elapsed: 5.7 seconds
+S3        | Crime.csv.gz | 100%
+Redshift  | test       | DONE
+Time elapsed: 55.7 seconds
 
 ```
 ##Test prerequisits.
@@ -109,20 +115,29 @@ Time elapsed: 5.7 seconds
 ####Target Redshift table DDL
 
 ```
-CREATE TABLE test2 (id integer , num integer, data varchar,num2 integer, data2 varchar,num3 
-integer, data3 varchar,num4 integer, data4 varchar);
+drop table test;
+create table test (
+Incident_ID VARCHAR(20),CR_Number VARCHAR(20),Dispatch_Date_Time TIMESTAMP,Class VARCHAR(10) ,Class_Description VARCHAR(100),
+Police_District_Name VARCHAR(40),Block_Address VARCHAR(100),
+City VARCHAR(40),State VARCHAR(8),Zip_Code VARCHAR(10),
+Agency VARCHAR(40),Place VARCHAR(40),Sector VARCHAR(10) ,Beat VARCHAR(10),PRA VARCHAR(10),Start_Date_Time TIMESTAMP,End_Date_Time TIMESTAMP,
+Latitude VARCHAR(20),Longitude VARCHAR(20),Police_District_Number VARCHAR(50),Location VARCHAR(80),Address_Number VARCHAR(30));
 
 ```
 
 ####Test data
-* Test data is in file examples\data.csv
+* Test data is in file [Crime.csv] (https://catalog.data.gov/dataset/crime)
 
-###Sources
-* Will add as soon as I clean em up and remove all the passwords and AWS keys :-)).
 
 ###Download
 * `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
+
+#### Controlling timestamp format
+Use `-m/--timeformat "MM/DD/YYYY HH12:MI:SS"` to control timestamp format.
+
+#### Skipping the header
+Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
 
 
 
