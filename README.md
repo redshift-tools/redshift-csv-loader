@@ -7,7 +7,7 @@ Features:
  - No need for Amazon AWS CLI.
  - Works from your OS Windows desktop (command line).
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
- - It's 32 bit - it will work on any vanilla Windows.
+ - Tt will work on any vanilla DOS for 64bit Windows.
  - AWS Access Keys are not passed as arguments. 
  - Written using Python/boto/psycopg2/PyInstaller.
 
@@ -44,7 +44,7 @@ Pre-Prod (UAT/QA/DEV)
 ##Usage
 
 ```
-c:\Python35-32\PROJECTS\csv2redshift>dist-32bit\csv_loader_for_redshift.exe
+>dist-64bit\csv_loader_for_redshift.exe
 #############################################################################
 #CSV-to-Redshift Data Loader (v1.2, beta, 04/05/2016 15:11:53) [64bit]
 #Copyright (c): 2016 Alex Buzunov, All rights reserved.
@@ -106,7 +106,7 @@ Result
 ```
 S3        | Crime.csv.gz | 100%
 Redshift  | test       | DONE
-Time elapsed: 55.7 seconds
+Time elapsed: 45.7 seconds
 
 ```
 
@@ -231,6 +231,7 @@ Please, contact me for sources.
 Yes, please, ask me for new features.
 
 #### What other AWS tools you've created?
+- [Oracle_To_S3_Data_Uploader] (https://github.com/alexbuz/Oracle_To_S3_Data_Uploader) - Stream Oracle data to Amazon- S3.
 - [S3_Sanity_Check] (https://github.com/alexbuz/S3_Sanity_Check/blob/master/README.md) - let's you `ping` Amazon-S3 bucket to see if it's publicly readable.
 - [EC2_Metrics_Plotter](https://github.com/alexbuz/EC2_Metrics_Plotter/blob/master/README.md) - plots any CloudWatch EC2 instance  metric stats.
 - [S3_File_Uploader](https://github.com/alexbuz/S3_File_Uploader/blob/master/README.md) - uploads file from Windows to S3.
