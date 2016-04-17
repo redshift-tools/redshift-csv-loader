@@ -134,6 +134,26 @@ Latitude VARCHAR(20),Longitude VARCHAR(20),Police_District_Number VARCHAR(50),Lo
 * Test data is in file [Crime.csv] (https://catalog.data.gov/dataset/crime)
 
 
+### Modifying default script loader.
+You can modify default Redshift COPY command this script is using.
+
+Open file [include\loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py) and modify `sql` variable on line 24.
+
+```
+	sql="""
+COPY %s FROM '%s' 
+	CREDENTIALS 'aws_access_key_id=%s;aws_secret_access_key=%s' 
+	DELIMITER '%s' 
+	FORMAT CSV %s 
+	GZIP 
+	%s 
+	%s; 
+	COMMIT;
+	...
+```
+
+
+
 ###Download
 * `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
@@ -174,7 +194,7 @@ You have to `gzip` it. You can use 7-Zip to do that.
 No
 
 #### Does it create target Redshift table?
-No
+No, but you can code it into default loder script  [include\loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py).
 
 #### Is there an option to compress input CSV file before upload?
 Yes. Use `-z` or `--gzip_source_file` argument so the tool does compression for you.
