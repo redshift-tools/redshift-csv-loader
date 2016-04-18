@@ -199,6 +199,12 @@ No, but you can code it into default loder script  [include\loader.py](https://g
 #### Is there an option to compress input CSV file before upload?
 Yes. Use `-z` or `--gzip_source_file` argument so the tool does compression for you.
 
+#### I'm experiencing errors in Redshift. How can I debug?
+you can query stl_load_errors table for loader errors.
+```
+avrocluster=# select * from stl_load_errors order by starttime desc;
+```
+Also, you can include print statements into [include\loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py). script to see what command is actually executed.
 
 #### Explain first step of data load?
 The CSV you provided is getting preloaded to Amazon-S3.
@@ -223,6 +229,7 @@ Yes, but you have to use 'gzip' compression type.
 I used Python, Boto, and psycopg2 to write it.
 Boto is used to upload file to S3. 
 psycopg2 is used to establish ODBC connection with Redshift clusted and execute `COPY` command.
+
 
 #### Where are the sources?
 Please, contact me for sources.
