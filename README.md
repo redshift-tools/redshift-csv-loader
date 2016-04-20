@@ -230,6 +230,9 @@ I used Python, Boto, and psycopg2 to write it.
 Boto is used to upload file to S3. 
 psycopg2 is used to establish ODBC connection with Redshift clusted and execute `COPY` command.
 
+#### I'm extracting data from Oracle using SQL query into CSV file. How do I load it to Redshift.
+You can use [Oracle-to-Redshft-Data-Loader] (https://github.com/alexbuz/Oracle-To-Redshift-Data-Loader).
+Profide query file as input parameter and it will load data.
 
 #### Where are the sources?
 Please, contact me for sources.
