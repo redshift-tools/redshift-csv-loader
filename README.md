@@ -8,9 +8,10 @@ Features:
  - Works from your OS Windows desktop (command line).
  - COPY command configurable via [loader script](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py)
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
- - Tt will work on any vanilla DOS for 64bit Windows.
+ - It will work on any vanilla DOS for 64bit Windows.
  - AWS Access Keys are not passed as arguments. 
- - Written using Python/boto/psycopg2/PyInstaller.
+ - Written using Python/boto/psycopg2
+ - Compiled using PyInstaller.
 
 
 ##Version
