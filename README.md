@@ -219,7 +219,7 @@ Your input file is getting compressed (optional) and uploaded to S3 using creden
 You Redshift cluster has to be open to the world (accessible via port 5439 from internet).
 It uses PostgreSQL COPY command to load file located on S3 into Redshift table.
 
-#### How do I skip the header record in input CSV file?
+#### How do I load CSV file into Redshift without the header record?
 Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
 
 #### How do i set custom timestamp format for Redshift load?
