@@ -97,7 +97,7 @@ set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' 
 
 ```
 cd c:\Python35-32\PROJECTS\csv2redshift
-python csv_loader_for_redshift.py Crime.csv testbucket ^
+csv_loader_for_redshift.exe Crime.csv testbucket ^
 	-r ^
 	-p ^
 	-d "," ^
