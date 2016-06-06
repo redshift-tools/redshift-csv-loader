@@ -103,10 +103,6 @@ def update_progress_bar():
 		time.sleep(0.2)	
 		i+=1
 def progress(complete, total):
-	#sys.stdout.write('Uploaded %s bytes of %s (%s%%)\n' % (complete, total, int(100*complete/total)))
-	#sys.stdout.write('Uploaded %s bytes of %s (%s%%)\n' % (complete, total, int(100*complete/total)))
-	#sys.stdout.flush()
-	#update_progress_bar(complete,total)
 	prs=int(100*complete/total)
 	#print prs
 	bn= os.path.basename(args[0])
@@ -115,7 +111,7 @@ def progress(complete, total):
 	sys.stdout.flush()
 	sys.stdout.write('\r\%s\b\b\b\b\b\b\b%s | %s%%' % (len(txt)*'\b', txt,prs))
 	sys.stdout.flush()
-	#sys.stdout.write('\b\b\b\n1')
+
 	if 0:
 		
 
@@ -147,32 +143,18 @@ def main(transfer_file, bucket_name, s3_key_name=None, use_rr=False,
 	# open the wikipedia file
 	if not s3_key_name:
 		s3_key_name = os.path.basename(transfer_file)
-	#filename, headers = urllib.urlretrieve( os.path.join('/tmp', local_filename))
-	#print local_filename
-	
-	#print headers.gettype()
-	#sys.stdout.write('Connecting to S3...\n')
 	conn = boto.connect_s3(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY)
 	bucket = conn.get_bucket(bucket_name)
-	#pprint(dir(bucket))
-	#print 
-	#e(0)
+
 	file_handle = open(transfer_file, 'rb')
 
 	k = Key(bucket)
 	k.key = s3_key_name
-
-	#sys.stdout.write('Uploading to '+bucket.get_website_endpoint()+'...\n')
-	#sys.stdout.write('File size: %s\n' % sizeof_fmt(os.path.getsize(transfer_file)))
-	#sys.stdout.write('Public = %s\n' % str(make_public))
-	#sys.stdout.write('ReducedRedundancy = %s\n' % str(use_rr))
-	
 	
 	k.set_contents_from_file(file_handle, cb=progress, num_cb=20, reduced_redundancy=use_rr )
 	if make_public:
 		k.make_public()
 
-	#sys.stdout.write('\nUpload complete.\n')
 
 	return '/'.join((bucket_name, s3_key_name))
 def wait(conn):
@@ -204,25 +186,7 @@ def import_module(filepath):
 	elif file_ext.lower() == '.pyc':
 		py_mod = imp.load_compiled(mod_name, filepath)
 	return py_mod
-"""
-Test:
-set REDSHIFT_CONNECT_STRING="dbname='avrocluster' port='5439' user='avrocluster' password='avroclusterA1' host='avrocluster.cxvkqzwtuva2.us-west-2.redshift.amazonaws.com'"  
 
-cd c:\Python27\s3
-python csv_loader_for_redshift.py c:\tmp\data.zip pythonuploadtest1 -r -p
-
-Scripts\pyinstaller.exe -y Redshift\csv_loader_for_redshift.py --log-level DEBUG --onefile 
-
-c:\Python27\Scripts\pyinstaller.exe -y csv_loader_for_redshift.py --log-level DEBUG --onefile 
-
-
-dist\csv_loader_for_redshift.exe crime_small.csv pythonuploadtest1 -r -p -d "," -t test -z
-
-csv_loader_for_redshift.py Crime.csv pythonuploadtest1 -r -p -d "," -t test -z
-
-
-
-"""
 if __name__ == "__main__":
 	if 0:
 		import progressbar
@@ -243,8 +207,7 @@ if __name__ == "__main__":
 		with term.location(0, 11):
 			print("Text on line 11")
 		e(0)
-	#fn=r'c:\tmp\data.zip'
-	#bn = 'pythonuploadtest1'
+
 	parser = OptionParser()
 	parser.add_option("-r", "--use_rr", dest="use_rr",
 					  action="store_true", default=False)
