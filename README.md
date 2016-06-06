@@ -1,15 +1,19 @@
 # CSV File Loader for Amazon Redshift DB.
-Loads CSV file to Amazon-Redshift table from Windows command line.
+    Ground to cloud data integration tool.
+    Loads CSV file to Amazon-Redshift table from Windows command line.
 
 Features:
  - Loads local (to your Windows desktop) CSV file to Amazon Redshift.
- - No need to preload your data to S3 prior to insert to Redshift.
+ - Script preloads your data to S3 prior to insert to Redshift.
  - No need for Amazon AWS CLI.
  - Works from your OS Windows desktop (command line).
+ - COPY command configurable via [loader script](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py)
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
- - It's 32 bit - it will work on any vanilla Windows.
+ - It will work on any vanilla DOS for 64bit Windows.
+ - Modify [loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py) at will.
  - AWS Access Keys are not passed as arguments. 
- - Written using Python/boto/psycopg2/PyInstaller.
+ - Written using Python/boto/psycopg2
+ - Compiled using PyInstaller.
 
 
 ##Version
@@ -44,7 +48,7 @@ Pre-Prod (UAT/QA/DEV)
 ##Usage
 
 ```
-c:\Python35-32\PROJECTS\csv2redshift>dist-32bit\csv_loader_for_redshift.exe
+>dist-64bit\csv_loader_for_redshift.exe
 #############################################################################
 #CSV-to-Redshift Data Loader (v1.2, beta, 04/05/2016 15:11:53) [64bit]
 #Copyright (c): 2016 Alex Buzunov, All rights reserved.
@@ -93,7 +97,7 @@ set REDSHIFT_CONNECT_STRING="dbname='***' port='5439' user='***' password='***' 
 
 ```
 cd c:\Python35-32\PROJECTS\csv2redshift
-python csv_loader_for_redshift.py Crime.csv pythonuploadtest1 ^
+csv_loader_for_redshift.exe Crime.csv testbucket ^
 	-r ^
 	-p ^
 	-d "," ^
@@ -106,7 +110,7 @@ Result
 ```
 S3        | Crime.csv.gz | 100%
 Redshift  | test       | DONE
-Time elapsed: 55.7 seconds
+Time elapsed: 45.7 seconds
 
 ```
 
@@ -132,6 +136,26 @@ Latitude VARCHAR(20),Longitude VARCHAR(20),Police_District_Number VARCHAR(50),Lo
 
 ####Test data
 * Test data is in file [Crime.csv] (https://catalog.data.gov/dataset/crime)
+
+
+### Modifying default script loader.
+You can modify default Redshift COPY command this script is using.
+
+Open file [include\loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py) and modify `sql` variable on line 24.
+
+```
+	sql="""
+COPY %s FROM '%s' 
+	CREDENTIALS 'aws_access_key_id=%s;aws_secret_access_key=%s' 
+	DELIMITER '%s' 
+	FORMAT CSV %s 
+	GZIP 
+	%s 
+	%s; 
+	COMMIT;
+	...
+```
+
 
 
 ###Download
@@ -174,11 +198,17 @@ You have to `gzip` it. You can use 7-Zip to do that.
 No
 
 #### Does it create target Redshift table?
-No
+No, but you can code it into default loder script  [include\loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py).
 
 #### Is there an option to compress input CSV file before upload?
 Yes. Use `-z` or `--gzip_source_file` argument so the tool does compression for you.
 
+#### I'm experiencing errors in Redshift. How can I debug?
+you can query stl_load_errors table for loader errors.
+```
+avrocluster=# select * from stl_load_errors order by starttime desc;
+```
+Also, you can include print statements into [include\loader.py](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py). script to see what command is actually executed.
 
 #### Explain first step of data load?
 The CSV you provided is getting preloaded to Amazon-S3.
@@ -190,7 +220,7 @@ Your input file is getting compressed (optional) and uploaded to S3 using creden
 You Redshift cluster has to be open to the world (accessible via port 5439 from internet).
 It uses PostgreSQL COPY command to load file located on S3 into Redshift table.
 
-#### How do I skip the header record in input CSV file?
+#### How do I load CSV file into Redshift without the header record?
 Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
 
 #### How do i set custom timestamp format for Redshift load?
@@ -204,6 +234,10 @@ I used Python, Boto, and psycopg2 to write it.
 Boto is used to upload file to S3. 
 psycopg2 is used to establish ODBC connection with Redshift clusted and execute `COPY` command.
 
+#### I'm extracting data from Oracle using SQL query into CSV file. How do I load it to Redshift.
+You can use [Oracle-to-Redshft-Data-Loader] (https://github.com/alexbuz/Oracle-To-Redshift-Data-Loader).
+Profide query file as input parameter and it will load data.
+
 #### Where are the sources?
 Please, contact me for sources.
 
@@ -211,6 +245,7 @@ Please, contact me for sources.
 Yes, please, ask me for new features.
 
 #### What other AWS tools you've created?
+- [Oracle_To_S3_Data_Uploader] (https://github.com/alexbuz/Oracle_To_S3_Data_Uploader) - Stream Oracle data to Amazon- S3.
 - [S3_Sanity_Check] (https://github.com/alexbuz/S3_Sanity_Check/blob/master/README.md) - let's you `ping` Amazon-S3 bucket to see if it's publicly readable.
 - [EC2_Metrics_Plotter](https://github.com/alexbuz/EC2_Metrics_Plotter/blob/master/README.md) - plots any CloudWatch EC2 instance  metric stats.
 - [S3_File_Uploader](https://github.com/alexbuz/S3_File_Uploader/blob/master/README.md) - uploads file from Windows to S3.
