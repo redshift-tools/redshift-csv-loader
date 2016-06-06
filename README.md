@@ -4,7 +4,7 @@
 
 Features:
  - Loads local (to your Windows desktop) CSV file to Amazon Redshift.
- - No need to preload your data to S3 prior to insert to Redshift.
+ - Script preloads your data to S3 prior to insert to Redshift.
  - No need for Amazon AWS CLI.
  - Works from your OS Windows desktop (command line).
  - COPY command configurable via [loader script](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py)
