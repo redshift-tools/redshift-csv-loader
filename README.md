@@ -16,11 +16,10 @@ Features:
  - Compiled using PyInstaller.
 
 
-##Version
-
-OS|Platform|Version 
----|---|---- | -------------
-Windows|32bit|[0.1.0 beta]
+##Other scripts
+  - [Oracle -> Redshift data loader](https://github.com/alexbuz/Oracle-To-Redshift-Data-Loader/blob/master/README.md)
+  - [PostgreSQL -> Redshift data loader](https://github.com/alexbuz/PostgreSQL_To_Redshift_Loader/blob/master/README.md)
+  - [MySQL -> Redshift data loader](https://github.com/alexbuz/MySQL_To_Redshift_Loader/blob/master/README.md)
 
 ##Purpose
 
