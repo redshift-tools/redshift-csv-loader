@@ -17,9 +17,9 @@ Features:
 
 
 ##Other scripts
-  - [Oracle -> Redshift data loader](https://github.com/alexbuz/Oracle-To-Redshift-Data-Loader/blob/master/README.md)
-  - [PostgreSQL -> Redshift data loader](https://github.com/alexbuz/PostgreSQL_To_Redshift_Loader/blob/master/README.md)
-  - [MySQL -> Redshift data loader](https://github.com/alexbuz/MySQL_To_Redshift_Loader/blob/master/README.md)
+  - [Oracle -> Redshift](https://github.com/alexbuz/Oracle-To-Redshift-Data-Loader/blob/master/README.md) data loader
+  - [PostgreSQL -> Redshift](https://github.com/alexbuz/PostgreSQL_To_Redshift_Loader/blob/master/README.md) data loader
+  - [MySQL -> Redshift](https://github.com/alexbuz/MySQL_To_Redshift_Loader/blob/master/README.md) data loader
 
 ##Purpose
 
