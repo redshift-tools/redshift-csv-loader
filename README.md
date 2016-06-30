@@ -3,7 +3,7 @@
     Loads CSV file to Amazon-Redshift table from Windows command line.
 
 Features:
- - Loads local (to your Windows desktop) CSV file to Amazon Redshift.
+ - Loads CSV file to Amazon Redshift.
  - Script preloads your data to S3 prior to insert to Redshift.
  - No need for Amazon AWS CLI.
  - Works from your OS Windows desktop (command line).
@@ -180,7 +180,7 @@ COPY %s FROM '%s'
 #   
 #FAQ
 #  
-#### Can it load CSV file from Windows desktop to Amazon Redshift.
+#### Can it load CSV file Redshift.
 Yes, it is the main purpose of this tool.
 
 #### Can developers integrate CSV loader into their ETL pipelines?
