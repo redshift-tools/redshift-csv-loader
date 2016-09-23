@@ -1,6 +1,6 @@
 """#############################################################################
 #CSV-to-Redshift Data Loader (v1.2, beta, 04/05/2016 15:11:53) [64bit] 
-#Copyright (c): 2016 Alex Buzunov, All rights reserved.
+#Copyright (c): Free to change or distribute.
 #Agreement: Use this tool at your own risk. Author is not liable for any damages 
 #           or losses related to the use of this software.
 ################################################################################
