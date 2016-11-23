@@ -1,12 +1,13 @@
 # CSV File Loader for Amazon Redshift DB.
     Ground to cloud data integration tool.
-    Loads CSV file to Amazon-Redshift table from Windows command line.
+    Loads CSV file to Amazon-Redshift table from command line.
 
 Features:
  - Loads CSV file to Amazon Redshift.
  - Script preloads your data to S3 prior to insert to Redshift.
  - No need for Amazon AWS CLI.
- - Works from your OS Windows desktop (command line).
+ - [Executable] (https://github.com/alexbuz/CSV_Loader_For_Redshift/tree/master/dist-64bit) works from your OS Windows desktop CLI (command line).
+ - [Python] (https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/sources/csv_loader_for_redshift.py) script will work on Linux and Windows.
  - COPY command configurable via [loader script](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/dist-64bit/include/loader.py)
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
  - It will work on any vanilla DOS for 64bit Windows.
