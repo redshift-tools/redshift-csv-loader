@@ -6,7 +6,7 @@ Features:
  - Loads CSV file to Amazon Redshift.
  - Script preloads your data to S3 prior to insert to Redshift.
  - No need for Amazon AWS CLI.
- - [Executable] (https://github.com/alexbuz/CSV_Loader_For_Redshift/tree/master/dist-64bit) works from your OS Windows desktop CLI (command line).
+ - [Executable] (https://github.com/alexbuz/CSV_Loader_For_Redshift/releases) works from your OS Windows desktop CLI (command line).
  - [Python] (https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/sources/csv_loader_for_redshift.py) script will work on Linux and Windows.
  - COPY command configurable via [loader script](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/include/loader.py)
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
