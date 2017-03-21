@@ -6,8 +6,8 @@ Features:
  - Loads CSV file to Amazon Redshift.
  - Script preloads your data to S3 prior to insert to Redshift.
  - No need for Amazon AWS CLI.
- - [Executable] (https://github.com/alexbuz/CSV_Loader_For_Redshift/releases) works from your OS Windows desktop CLI (command line).
- - [Python] (https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/csv_loader_for_redshift.py) script will work on Linux and Windows.
+ - [Executable](https://github.com/alexbuz/CSV_Loader_For_Redshift/releases) works from your OS Windows desktop CLI (command line).
+ - [Python](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/csv_loader_for_redshift.py) script will work on Linux and Windows.
  - COPY command configurable via [loader script](https://github.com/alexbuz/CSV_Loader_For_Redshift/blob/master/include/loader.py)
  - It's executable (csv_loader_for_redshift.exe)  - no need for Python install.
  - It will work on any vanilla DOS for 64bit Windows.
@@ -44,14 +44,14 @@ Features:
 	* psycopg2 docs: http://initd.org/psycopg/docs/
 - Executable is created using [pyInstaller] (http://www.pyinstaller.org/)
 
-##Audience
+## Audience
 
 Database/ETL developers, Data Integrators, Data Engineers, Business Analysts, AWS Developers, DevOps, 
 
-##Designated Environment
+## Designated Environment
 Pre-Prod (UAT/QA/DEV)
 
-##Usage
+## Usage
 
 ```
 >dist-64bit\csv_loader_for_redshift.exe
@@ -85,10 +85,10 @@ Usage:
 """
 
 ```
-#Example
+# Example
 
 
-###Environment variables
+### Environment variables
 
 * Set the following environment variables (for all tests:
 
@@ -127,7 +127,7 @@ Use `-m/--timeformat "MM/DD/YYYY HH12:MI:SS"` to control timestamp format.
 Use `-i/--ignoreheader  1` to set number of lines to ignore in input file.
 
 
-####Target Redshift table DDL
+#### Target Redshift table DDL
 
 ```
 drop table test;
@@ -140,7 +140,7 @@ Latitude VARCHAR(20),Longitude VARCHAR(20),Police_District_Number VARCHAR(50),Lo
 
 ```
 
-####Test data
+#### Test data
 * Test data is in file [Crime.csv] (https://catalog.data.gov/dataset/crime)
 
 
@@ -164,7 +164,7 @@ COPY %s FROM '%s'
 
 
 
-###Download
+### Download
 * `git clone https://github.com/alexbuz/CSV_Loader_For_Redshift`
 * [Master Release](https://github.com/alexbuz/CSV_Loader_For_Redshift/archive/master.zip) -- `csv_loader_for_redshift 0.1.0`
 
@@ -178,7 +178,7 @@ COPY %s FROM '%s'
 #
 #
 #   
-#FAQ
+# FAQ
 #  
 #### Can it load CSV file Redshift.
 Yes, it is the main purpose of this tool.
