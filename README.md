@@ -16,7 +16,7 @@ Features:
  - Compiled using PyInstaller.
 
 
-##Other scripts
+## Other scripts
   - [Oracle -> Redshift](https://github.com/alexbuz/Oracle-To-Redshift-Data-Loader/blob/master/README.md) data loader.| [TableHunter for Oracle](https://github.com/alexbuz/TableHunter-For-Oracle).
   - [PostgreSQL -> Redshift](https://github.com/alexbuz/PostgreSQL_To_Redshift_Loader/blob/master/README.md) data loader
   - [MySQL -> Redshift](https://github.com/alexbuz/MySQL_To_Redshift_Loader/blob/master/README.md) data loader
@@ -28,7 +28,7 @@ Features:
  
   
 
-##Purpose
+## Purpose
 
 - Ad-hoc CSV file load to Amazon Redshift table.
 
