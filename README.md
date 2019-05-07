@@ -14,7 +14,7 @@ Features:
  - Written using Python/boto/psycopg2
  - Compiled using PyInstaller.
 
-[<img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg">](https://www.buymeacoffee.com/0nJ32Xg)
+
 
 [<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png">](https://www.buymeacoffee.com/0nJ32Xg)
 
@@ -249,7 +249,7 @@ Yes, please, ask me for new features.
 ## Teardown
 https://github.com/pydemo/teardown
 
-
+[<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png">](https://www.buymeacoffee.com/0nJ32Xg)
 
 
 
