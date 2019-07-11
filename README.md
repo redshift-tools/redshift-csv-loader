@@ -169,10 +169,17 @@ COPY %s FROM '%s'
 https://github.com/pydemo/teardown
 
 
-## Snowpipe
+## Other scripts
 
-https://github.com/pydemo/Snowpipe-For-SQLServer
-
+ - https://github.com/pydemo/snowcli - Snowflake cli.
+ - https://github.com/pydemo/Snowpipe-For-SQLServer - Memory pipe from SQLServer to Snowflake
+ - https://github.com/pydemo/large-file-split-compress-parallel-upload-to-S3 - Chunked large file upload to S3
+ 
+ 
+ 
+ 
+ 
+ 
 :-))
 [<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png">](https://www.buymeacoffee.com/0nJ32Xg)
 
